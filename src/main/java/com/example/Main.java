@@ -60,9 +60,9 @@ public class Main {
 
   @RequestMapping("/hello")
     String hello(Map<String, Object> model) {
-    RelativisticModel.select();
-    Amount<Mass> m = Amount.valueOf("12 GeV").to(KILOGRAM);
-    model.put("science", "Hello World, and hello Mastercard interviewers!" + m.toString());
+    //RelativisticModel.select();
+    //Amount<Mass> m = Amount.valueOf("12 GeV").to(KILOGRAM);
+    model.put("science", "Hello World, and hello Mastercard interviewers!");
     return "hello";
   }
 
