@@ -48,13 +48,13 @@ public class Main {
     SpringApplication.run(Main.class, args);
   }
 
-  @RequestMapping("/")
+  @RequestMapping("hello")
   String index() {
     return "index";
   }
 
-  @RequestMapping("/hello")
-    String hello(Map<String, Object> model) {
+  @RequestMapping("/")
+  String hello(Map<String, Object> model) {
     //RelativisticModel.select();
     //Amount<Mass> m = Amount.valueOf("12 GeV").to(KILOGRAM);
     model.put("science", "Hello World, and hello Mastercard interviewers!");
